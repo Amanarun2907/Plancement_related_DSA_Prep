@@ -1,0 +1,27 @@
+Type conversion in Java is the process of converting one data type into another.
+There are two main types:
+
+Implicit Type Conversion (Widening)
+This happens automatically when you assign a smaller data type to a larger data type. 
+There's no data loss in this conversion.
+code---->
+int num = 10;
+double doubleNum = num; // int is converted to double
+System.out.println(doubleNum); 
+
+2. Explicit Type Conversion (Narrowing)
+This requires explicit casting because there's a risk of data loss. 
+You convert a larger data type into a smaller data type.
+code--->
+double doubleNum = 10.5;
+int num = (int) doubleNum; // double is cast to int
+System.out.println(num); // Output: 10 (decimal part is lost)
+Implicit Conversion: Safe and automatic.
+Explicit Conversion: Needs a cast and can lead to data loss.
+
+Type promotion in Java is when smaller data types are automatically converted to larger data types in expressions. 
+This ensures that operations are performed accurately without data loss.
+ int a = 5;
+double b = 6.2;
+double result = a + b; // 'a' (int) is promoted to 'double' before addition
+System.out.println(result); 
