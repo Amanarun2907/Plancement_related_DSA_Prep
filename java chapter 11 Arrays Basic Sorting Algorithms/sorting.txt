@@ -1,0 +1,58 @@
+Sorting in Arrays
+
+Sorting is the process of arranging elements of a list or array in a specific order, typically ascending or descending.
+
+Bubble Sort
+How it works:
+Compares adjacent elements and swaps them if they are in the wrong order.
+Repeats this process until no more swaps are needed.
+The largest element "bubbles" to the end of the array in each pass.
+
+
+Selection Sort
+How it works:
+Finds the minimum element in the unsorted part of the array.
+Swaps it with the first element of the unsorted part.
+Repeats this process for the remaining unsorted part.
+
+Insertion Sort
+How it works:
+Iterates through the array, starting from the second element.
+Compares the current element with the elements before it.
+Shifts larger elements one position to the right.
+Inserts the current element in its correct position.
+
+Counting Sort
+How it works:
+Determines the maximum value in the array.
+Creates a count array to store the frequency of each element.
+Modifies the count array to store the cumulative frequency.
+Iterates through the input array and places each element in its correct position in the output array based on the modified count array.
+
+
+Sorting Algorithms and Their Time Complexities
+
+Bubble Sort
+How it works: Compares adjacent elements and swaps them if they are in the wrong order.
+Time Complexity:
+Best case: O(n) (when the array is already sorted)
+Average case: O(n²)
+Worst case: O(n²)
+
+Selection Sort
+How it works: Finds the minimum element in the unsorted part and swaps it with the first element.
+Time Complexity:
+Best case: O(n²)
+Average case: O(n²)
+Worst case: O(n²)
+
+Insertion Sort
+How it works: Iterates through the array, inserting each element into its correct position relative to the sorted portion.
+Time Complexity:
+Best case: O(n) (when the array is already sorted)
+Average case: O(n²)
+Worst case: O(n²)
+
+Counting Sort
+How it works: Counts the occurrences of each element and uses the count information to place elements in their correct positions.
+Time Complexity: O(n + k), where n is the number of elements and k is the range of input values. It's efficient for a specific range of input values.
